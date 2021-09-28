@@ -1,0 +1,121 @@
+
+
+html{
+    font-size: 16px;
+}
+body{
+    font-family: $font;
+    line-height: 1.5;
+}
+
+*,::before,
+::after{
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+h1{
+    font-size: 2.5rem;
+    color: $secondary;
+    text-transform: uppercase;
+    font-weight: 900;
+   
+   
+}
+h2{
+    font-size: 1.5rem;
+    color: $secondary;
+}
+h3,h4,h5{
+    font-size: .8rem;
+    color: $secondary;
+}
+p{
+    font-size: 1rem;
+    color: #9E8B25;
+    
+}
+.flex{
+    display: flex;
+}
+.colom{
+    flex-direction: column;
+}
+.space-between{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+.margin-top{
+    margin-top:1rem ;
+}
+.margin-bottom{
+    margin-bottom:1rem ;
+}
+.margin-left{
+    margin-left:1rem ;
+}
+.margin-right{
+    margin-right:1rem ;
+}
+.padding{
+    padding: 1rem;
+}
+.padding-top{
+    padding-top: 1rem;
+}
+.padding-bottom{
+    padding-bottom: 1rem;
+}
+img{
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.header{
+    position: fixed;
+  
+    width: 100%;
+   
+}
+
+h2{
+   
+    animation-name: leftslideAnimation;
+    animation-duration: 4s;
+    &:hover{
+        transition: 2s;
+        transform:  scale(2);
+    }
+}
+p{
+    
+    animation-name: rightslideAnimation;
+    animation-duration: 4s;
+}
+
+footer:hover small{
+
+    animation-name: topslideAnimation;
+    animation-duration: 2s;
+}
+
+button:hover i{
+    transition: 2s;
+    transform: scale(3);
+}

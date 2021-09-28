@@ -1,0 +1,68 @@
+
+
+.team{
+    margin-top: 3rem;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        animation-name: leftslideAnimation;
+        animation-duration: 4s;
+    }
+    p{
+        color: $secondary;
+        animation-name: rightslideAnimation;
+        animation-duration: 4s;
+    }
+    figure{
+        margin-top: 2rem;
+        width: 100%;
+          
+    &:hover img{
+        animation-name: imgAnimation;
+        animation-duration: 5s;
+      
+    }
+        div{
+          width: 23%;
+          img{
+              border: .2rem solid black;
+              width: 100%;
+             
+          }
+         
+        }
+
+    }
+
+
+}
+.technology{
+    margin-top: 3rem;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        
+    }
+    p{
+        color: $secondary;
+    }
+    figure{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 100%;
+
+          
+     
+        animation-name: imgAnimation;
+        animation-duration: 2s;
+      
+    
+        video{
+            border: .2rem solid black;
+        }
+    }
+}

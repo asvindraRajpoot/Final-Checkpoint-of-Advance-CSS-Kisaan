@@ -1,0 +1,98 @@
+@keyframes imgAnimation{
+
+    from{
+       
+        transform: scale(.5);
+       
+       
+
+    }
+    to{  transform:  scale(1);
+
+    }
+
+    
+}
+
+@keyframes colorAnimation{
+
+    from{
+        left: 0;
+        background-color: $secondary;
+       
+       
+       
+
+    }
+    to{
+       right: 0;
+       background-color: aqua;
+
+    }
+
+    
+}
+
+@keyframes rightslideAnimation{
+
+    from{
+        left: 0;
+        transform: translateX(700px);
+       
+       
+       
+
+    }
+    to{
+       right: 0;
+       transform: translateX(0);
+
+    }
+
+    
+}
+@keyframes leftslideAnimation{
+
+    from{
+        left: 0;
+        transform: translateX(-700px);
+       
+       
+       
+
+    }
+    to{
+       right: 0;
+       transform: translateX(0px);
+
+    }
+
+    
+}
+
+@keyframes topslideAnimation{
+
+    from{
+        left: 0;
+        transform: translateY(-100px);
+       
+       
+       
+
+    }
+    to{
+       right: 0;
+       transform: translateX(0px);
+
+    }
+
+    
+}
+
+
+li:hover i{
+
+    transition-duration: 500ms;
+    transform: scale(2) rotate(360deg);
+    color: $primary;
+}

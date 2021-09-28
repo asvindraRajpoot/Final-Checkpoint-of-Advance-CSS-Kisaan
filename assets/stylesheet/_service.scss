@@ -1,0 +1,55 @@
+.about{
+    padding-top: 8rem;
+}
+
+.service{
+   
+    margin-top: 4rem;
+    h2{
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        
+    }
+    p{
+        color: $secondary;
+        margin-bottom: 2rem;
+    }
+
+    &:hover img{
+        animation-name: imgAnimation;
+        animation-duration: 5s;
+      
+    }
+    img{
+        border: .3rem solid black;
+    }
+
+.row-1{
+    width: 100%;
+    div{
+        width: 45%;
+    }
+
+}
+}
+
+    
+
+.service-article{
+margin-top: 2rem;
+margin-bottom: 2rem;
+    width: 100%;
+    article{
+        width: 45%;
+    }
+    figure{
+        width: 45%;
+        animation-name: imgAnimation;
+        animation-duration: 5s;
+        video{
+            width: 100%;
+            border: .3rem solid black;
+        }
+    }
+}

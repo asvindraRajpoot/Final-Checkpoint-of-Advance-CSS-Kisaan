@@ -1,0 +1,133 @@
+.header{
+    position: fixed;
+  
+    width: 100%;
+
+    background-color:rgba($secondary,.2);
+   
+    figure{
+        width: 5.5%;
+        animation-name: leftslideAnimation;
+        animation-duration: 3s;
+        
+    }
+    nav{
+        animation-name: rightslideAnimation;
+        animation-duration: 3s;
+        width: 30%;
+        a{
+            color: $secondary;
+            font-weight: bold;
+            
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+.home{
+   
+    background-image: linear-gradient(rgba(0, 0, 0,.1),rgba(0,0,0,.6)), url(../media/image/crops/crop3.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+   
+    background-attachment: fixed;   
+    height: 100rem; 
+    z-index: -1;
+}
+.hero{
+   padding-top: 8rem;
+   
+}
+
+.info{
+    width: 100%;
+    margin-top: 3rem;
+
+    figure{
+        width: 40%;
+                
+    &:hover img{
+        animation-name: imgAnimation;
+        animation-duration: 5s;
+      
+    }
+        img{
+            border: .2rem solid black;
+            border-radius: .4rem;
+        }
+    }
+    article{
+        width: 50%;
+        h2{
+            font-size: 2rem;
+            color: aliceblue;
+            color: $white;
+            font-weight: 900;
+        }
+        p{
+            line-height: 2;
+        }
+        button{
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            margin-top: 2rem;
+            border-radius: 1rem;
+            border: 0;
+            background-color: rgba(aliceblue,.8);
+            &:hover{
+                background-color: $white;
+            }
+            i{
+                margin-left: 2rem;
+               
+            }
+        }
+    }
+}
+
+.work{
+    margin-top: 3rem;
+    
+    figure{
+        width: 45%;
+                
+    &:hover video{
+        animation-name: imgAnimation;
+        animation-duration: 5s;
+      
+    }
+        video{
+            width: 100%;
+            border: .2rem solid black;
+        }
+    }
+    article{
+        width: 45%;
+        h2{
+            font-size: 2rem;
+            color: aliceblue;
+        }
+        p{
+            line-height: 2;
+        }
+    }
+}
+footer{
+    background-color: $secondary;
+    padding-bottom: 1rem;
+   
+    small{
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: aliceblue;
+    }
+    li{
+        margin: 0 1rem;
+        i{
+            color: white;
+        }
+    }
+}
