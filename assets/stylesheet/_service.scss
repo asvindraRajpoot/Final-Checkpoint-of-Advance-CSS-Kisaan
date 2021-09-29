@@ -1,55 +1,531 @@
-.about{
-    padding-top: 8rem;
+.hero-service{
+    padding: 20rem 0;
+    background-image:linear-gradient(rgba(black,.2),rgba(black,.2)),url(/assets/media/img/service-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+
+
+    article{
+       width: 100%;
+      
+      
+      
+        text-align: center;
+        display: -webkit-inline-box;
+      
+        overflow: auto;
+            
+        .main-quote{
+            width: 100%;
+            animation-name: leftslideAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+       
+          
+        }
+        
+        
+        h1{
+            letter-spacing: .16rem;
+            font-size: 3.5rem;
+            font-weight: 900;
+        }
+        p{
+            margin-bottom: 2rem;
+            letter-spacing: .16rem;
+        }
+        button{
+            margin: 1rem auto;
+            padding: .4rem 1.2rem;
+            font-size: 1rem;
+            transition: all 1s;
+            &:hover{
+
+                transform: scale(1.1);
+                background-color: $white;
+                color: gray;
+            }
+        }}
+        .square{
+            margin: 2rem auto;
+           justify-content: center;
+            div{
+                width: 1rem;
+                height: 1rem;
+                border: .2rem solid $white;
+                margin: 1rem .5rem;
+                transition: all 1ms;
+                transform: rotate(45deg);
+            }
+        }
+        
+    
 }
 
 .service{
-   
-    margin-top: 4rem;
+    margin-top: 0;
+    padding: 5rem 0;
     h2{
-        font-size: 2rem;
-        font-weight: 900;
+        font-size: 2rem ;
+        color: $primary;
+        font-weight: bold;
         text-transform: uppercase;
-        
     }
-    p{
-        color: $secondary;
+    img{
+        width: 20%;
+        margin: 1rem 0;
+        border: 0;
+    }
+    span{
+        letter-spacing: .16rem;
         margin-bottom: 2rem;
     }
 
-    &:hover img{
-        animation-name: imgAnimation;
-        animation-duration: 5s;
-      
-    }
-    img{
-        border: .3rem solid black;
+    h3{
+        margin: 1rem 0 .5rem 0;
+        
     }
 
-.row-1{
-    width: 100%;
-    div{
-        width: 45%;
-    }
+    .about-article{
+        article{
+            width: 23%;
+           
+        margin-top: 2rem;
+        &:hover .outer-box{
+            transition: all 1ms;
+            transform: rotate(90deg);
+            i{
+               transition: all 1ms;
+               transform: rotate(-90deg);
+            }
 
-}
-}
+             
+        }
+        .inner-box{
+            background-color: $primary;
+            border: .2rem solid $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            width: 4.1rem;
+            height: 4.1rem;
+           
+            i{
+                color: $white;
+                font-size: 1.7rem;
+               
+            }
+
+        }
+        .outer-box{
+            border: .2rem solid $primary;
+         
+             width: 4.5rem;
+             height: 4.5rem;
+             margin-right: 2rem;
+             transition: all 1ms;
+             transform: rotate(45deg);
+             margin-top: 1rem;
+             i{
+                transition: all 1ms;
+                transform: rotate(-45deg);
+             }
+        }
 
     
+    h3{
+        color: $primary;
+        font-size: 1.7rem;
+        margin-top: 2rem;
+       
 
-.service-article{
-margin-top: 2rem;
-margin-bottom: 2rem;
-    width: 100%;
-    article{
-        width: 45%;
     }
-    figure{
-        width: 45%;
-        animation-name: imgAnimation;
-        animation-duration: 5s;
-        video{
-            width: 100%;
-            border: .3rem solid black;
+    p{
+        color: $primary;
+        font-size: .9rem;
+
+    }
+}
+    }
+
+    button{
+        padding: .9rem 2.9rem;
+        font-size: 1rem;
+        transition: all 1s;
+        background-color: $primary;
+        letter-spacing: .16rem;
+        margin: 2rem auto;
+        
+        &:hover{
+
+            transform: scale(1.1);
+            background-color: $primary;
+            color: gray;
         }
     }
+   
+}
+.review{
+    padding: 3rem 0;
+    background-image:linear-gradient(rgba(black,.6),rgba(black,.6)),url(/assets/media/img/testimonial-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    h2{
+        font-size: 2rem ;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    img{
+        width: 20%;
+        margin: 1rem 0;
+        border: 0;
+    }
+    span{
+        letter-spacing: .16rem;
+        margin-bottom: 2rem;
+        color: $white;
+    }
+
+    blockquote{
+        color: $white;
+    }
+    cite{
+        color: $white;
+    }
+    .square{
+        margin: 1.7rem auto;
+        justify-content: center;
+
+     
+        div{
+            width: 1rem;
+            height: 1rem;
+            border: .2rem solid $white;
+            margin: 1rem .5rem;
+            transition: all 1ms;
+            transform: rotate(45deg);
+        }
+    }
+
+
+    .quote{
+       
+        display: -webkit-inline-box;
+        overflow: auto;
+     
+        article{
+            text-align: center;
+            width: 100%;
+            animation-name: leftslideAnimation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            
+
+
+          blockquote{
+              letter-spacing: .14rem;
+          }
+
+            cite::first-letter{
+                color: gray;
+            }
+            cite{
+                margin-top: 1rem;
+                display: block;
+            }
+           
+        }
+    }
+}
+
+.work{
+    
+    padding: 3rem 0;
+    h2{
+        font-size: 2rem ;
+        color: $primary;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    img{
+        width: 20%;
+        margin: 1rem 0;
+        border: 0;
+    }
+    span{
+        letter-spacing: .16rem;
+        margin-bottom: 2rem;
+        color: $primary;
+    }
+    nav{
+        margin: 2rem 0;
+        ul{
+            justify-content: center;
+            li{
+                margin: 0 1rem;
+
+                a{
+                    font-size: .9rem;
+                    text-transform: uppercase;
+                    padding: .4rem 1rem;
+                    color: $primary;
+
+                    &:hover{
+                        background-color: $primary;
+                        color: $white;
+
+                    }
+                }
+                a[href="all"]{
+                   
+                        color: $white;
+                        background-color: $primary;
+                    
+                }
+                
+            }
+        }
+        
+    }
+
+
+    .img-grid{
+        width: 100%;
+     
+        figure{
+            
+           width: 32%;
+           position: relative;
+           
+            overflow: hidden;
+           
+           img{
+               width: 100%;
+               transition: all 1s ease;
+           }
+           
+            &:hover img{
+                
+                transform: scale(1.4);
+            }
+
+            &:hover .overlay{
+                transform: scale(1);
+            }
+            .overlay{
+              
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba($primary,.7);
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                transform: scale(0);
+              
+                transition: .3s ease;
+            }
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+               
+                transform: translate(-50%, -50%);
+                text-align: center;
+                h3{
+                    font-size: 1.2rem;
+                }
+                span{
+                    font-size: 1rem;
+                    color: $white;
+                }
+              }
+        }
+
+
+    }
+
+   
+
+}
+
+.price{
+    padding: 2rem 0;
+    padding-bottom: 7rem;
+
+    background-image:linear-gradient(rgba(white,.5),rgba(white,.6)),url(/assets/media/img/money.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    h2{
+        font-size: 2rem ;
+        color: $primary;
+        font-weight: bold;
+        text-transform: uppercase;
+            
+    }
+    img{
+        width: 20%;
+        margin: 1rem 0;
+        border: 0;
+    }
+    span{
+        letter-spacing: .16rem;
+        margin-bottom: 2rem;
+        color: $primary;
+    }
+
+    .price-box{
+        width: 100%;
+
+        margin-top: 5rem;
+       
+         
+        .box{
+            width: 22%;
+           
+            line-height: 2;
+
+            transition: all 500ms;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 0rem 0rem .5rem .1rem gray;
+                .top{
+                    background-color: $primary;
+                    i{color: $white;
+                    
+                    }
+                    span{
+                        color: $white;
+                    }
+                }
+                .btn{
+                    border-bottom:.2rem solid $primary;
+                }
+            }
+            // box-shadow: 0rem 0rem .4rem .1rem black;
+           
+            .top{
+                background-color: #F5F5F5;
+                width: 100%;
+                text-align: center;
+                line-height: 1;
+                border-top: .3rem solid $primary;
+               
+                i{
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+
+                span{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            }
+            strong{
+                background-color: #EEEEEE;
+                display: block;
+                color: $primary;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+                font-size: 2.8rem;
+            }
+            ul{
+                margin-top: 1rem;
+            }
+            li{
+                font-size: .9rem;
+            }
+
+            .btn{
+                background-color: #EEEEEE;
+                width: 100%;
+                text-align: center;
+
+            
+            button{
+                padding: .5rem 1rem;
+                font-size: 1rem;
+                transition: all 1s;
+                background-color: $primary;
+                letter-spacing: .16rem;
+                margin: 2rem auto;
+                border: none;
+                
+                &:hover{
+        
+                    transform: scale(1.1);
+                    background-color: $primary;
+                    color: gray;
+                }
+            }
+
+        }
+
+        }
+
+
+    .professional{
+        transform: scale(1.1);
+       box-shadow: 0rem 0rem .4rem .1rem gainsboro;
+        
+       .top{
+           border-top: none;
+           background-color: $primary;
+           position: relative;
+           overflow: hidden;
+           i{
+               color: $white;
+           }
+           span{
+               color: $white;
+               letter-spacing: 0.09rem;
+           }
+           h4{
+               font-size: 1rem;
+               position: absolute;
+               background-color: $white;
+               color: $primary;
+               width: 15rem;
+               right: 0rem;
+               top: 2rem;
+               left: 6rem;
+               margin-left: 1rem;
+               padding: .3rem;
+               font-weight: bold;
+              
+               display: flex;
+               justify-content: center;
+               transform: rotate(50deg);
+
+           }
+          
+       }
+       .btn{
+           border-bottom: .3rem solid $primary;
+       }
+
+    }
+
+    }
+
+
+
 }

@@ -2,6 +2,7 @@
 
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 body{
     font-family: $font;
@@ -22,7 +23,7 @@ body{
 }
 h1{
     font-size: 2.5rem;
-    color: $secondary;
+    color: $white;
     text-transform: uppercase;
     font-weight: 900;
    
@@ -30,19 +31,22 @@ h1{
 }
 h2{
     font-size: 1.5rem;
-    color: $secondary;
+    color: $white;
 }
 h3,h4,h5{
     font-size: .8rem;
-    color: $secondary;
+    color: $white;
 }
 p{
     font-size: 1rem;
-    color: #9E8B25;
+    color: $white;
     
 }
 .flex{
     display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 .colom{
     flex-direction: column;
@@ -97,25 +101,114 @@ img{
 h2{
    
     animation-name: leftslideAnimation;
-    animation-duration: 4s;
-    &:hover{
-        transition: 2s;
-        transform:  scale(2);
-    }
+    animation-duration: 500ms;
+   
 }
 p{
     
     animation-name: rightslideAnimation;
-    animation-duration: 4s;
+    animation-duration: 500ms;
 }
 
 footer:hover small{
 
     animation-name: topslideAnimation;
-    animation-duration: 2s;
+    animation-duration: 500ms;
 }
 
 button:hover i{
-    transition: 2s;
+    transition: 1s;
     transform: scale(3);
+}
+
+button{
+    color: $white;
+    background-color: rgba($primary,.1);
+    border: none;
+    border: .2rem solid $white;
+}
+
+
+
+
+.header{
+    position: fixed;
+  
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 2;
+    background-color:$primary;
+   
+    figure{
+        width: 11.5%;
+        animation-name: leftslideAnimation;
+        animation-duration: 500ms;
+        
+    }
+    nav{
+        animation-name: rightslideAnimation;
+        animation-duration: 500ms;
+        width: 30%;
+        a{
+            color: $secondary;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+             transition-property: transform;
+             transition-duration: 500ms;
+           
+            &:hover{
+                color: $white;
+                transform: scale(1.5);
+               
+               
+            }
+        }
+    }
+}
+
+
+
+.footer{
+    padding: 2rem 0;
+    background-color: $primary;
+    position: relative;
+    div
+    {
+       
+        justify-content: center;
+        text-align: center;
+    }
+
+    small{
+        color: gray;
+    }
+    i{
+        color: $white;
+        margin: 1rem;
+        
+    }
+
+
+    button{
+       position: fixed;
+       
+       z-index: 2;
+       bottom: 1rem;
+       right: 1rem;
+     
+       width: 3rem;
+       height: 3rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-color: gray;
+       transform: rotate(45deg);
+       box-shadow: 0rem 0rem .2rem .2rem $primary;
+       i{
+           transform: rotate(-45deg);
+           color: gray;
+       }
+
+    }
 }

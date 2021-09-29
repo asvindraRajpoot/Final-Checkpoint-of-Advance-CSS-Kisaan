@@ -1,133 +1,173 @@
-.header{
-    position: fixed;
-  
-    width: 100%;
 
-    background-color:rgba($secondary,.2);
-   
-    figure{
-        width: 5.5%;
-        animation-name: leftslideAnimation;
-        animation-duration: 3s;
-        
-    }
-    nav{
-        animation-name: rightslideAnimation;
-        animation-duration: 3s;
-        width: 30%;
-        a{
-            color: $secondary;
-            font-weight: bold;
-            
-            &:hover{
-                color: $primary;
-            }
-        }
-    }
-}
-.home{
-   
-    background-image: linear-gradient(rgba(0, 0, 0,.1),rgba(0,0,0,.6)), url(../media/image/crops/crop3.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-   
-    background-attachment: fixed;   
-    height: 100rem; 
-    z-index: -1;
-}
 .hero{
-   padding-top: 8rem;
-   
-}
-
-.info{
+    padding: 20rem 0;
+    background-image:url(/assets/media/img/slider-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    margin-top: 3rem;
+    height: 100vh;
+    background-attachment: fixed;
 
-    figure{
-        width: 40%;
-                
-    &:hover img{
-        animation-name: imgAnimation;
-        animation-duration: 5s;
-      
-    }
-        img{
-            border: .2rem solid black;
-            border-radius: .4rem;
-        }
-    }
+
     article{
-        width: 50%;
-        h2{
-            font-size: 2rem;
-            color: aliceblue;
-            color: $white;
+       width: 100%;
+      
+      
+      
+        text-align: center;
+        display: -webkit-inline-box;
+      
+        overflow: auto;
+            
+        .main-quote{
+            width: 100%;
+            animation-name: leftslideAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+       
+          
+        }
+        
+        
+        h1{
+            letter-spacing: .16rem;
+            font-size: 3.5rem;
             font-weight: 900;
         }
         p{
-            line-height: 2;
+            margin-bottom: 2rem;
+            letter-spacing: .16rem;
         }
         button{
+            margin: 1rem auto;
+            padding: .4rem 1.2rem;
             font-size: 1rem;
-            padding: .5rem 1rem;
-            margin-top: 2rem;
-            border-radius: 1rem;
-            border: 0;
-            background-color: rgba(aliceblue,.8);
+            transition: all 1s;
             &:hover{
+
+                transform: scale(1.1);
                 background-color: $white;
+                color: gray;
             }
-            i{
-                margin-left: 2rem;
-               
+        }}
+        .square{
+            margin: 2rem auto;
+           justify-content: center;
+            div{
+                width: 1rem;
+                height: 1rem;
+                border: .2rem solid $white;
+                margin: 1rem .5rem;
+                transition: all 1ms;
+                transform: rotate(45deg);
             }
         }
-    }
+        
+    
 }
 
-.work{
-    margin-top: 3rem;
-    
-    figure{
-        width: 45%;
-                
-    &:hover video{
-        animation-name: imgAnimation;
-        animation-duration: 5s;
-      
-    }
-        video{
-            width: 100%;
-            border: .2rem solid black;
-        }
-    }
-    article{
-        width: 45%;
-        h2{
-            font-size: 2rem;
-            color: aliceblue;
-        }
-        p{
-            line-height: 2;
-        }
-    }
-}
-footer{
-    background-color: $secondary;
-    padding-bottom: 1rem;
+
+.domain{
    
-    small{
-        display: block;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        color: aliceblue;
+   padding-bottom: 3rem;
+   
+    h2{
+        padding-top: 4rem;
+        font-size: 2rem ;
+        color: $primary;
+        font-weight: bold;
+        text-transform: uppercase;
     }
-    li{
-        margin: 0 1rem;
-        i{
-            color: white;
+    h3{
+        font-size: 1.7rem ;
+        color: $primary;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+    img{
+        width: 20%;
+        margin: 1rem 0;
+        border: 0;
+    }
+    span{
+        letter-spacing: .16rem;
+        margin-bottom: 2rem;
+        color: $primary;
+    }
+    .tech-box{
+        padding: 1rem;
+    }
+
+     article{
+         width: 33%;
+         padding: 1rem;
+         align-items: center;
+         text-align: center;
+         box-shadow: 0rem 0rem .4rem .1rem gray;
+         transition: all 500ms;
+         &:hover{
+                   
+            transform: scale(1.1);
+            background-color: rgba(black,.9);
+            h3,p{
+                color: white;
+            }
         }
+         figure{
+             width: 100%;
+            
+             img{
+             
+                 width: 100%;
+             }
+         }
+
+         p{
+             color: $primary;
+             text-align: start;
+             margin: .3rem 0;
+
+         }
+     }
+
+    
+  
+
+}
+
+.vdo{
+    line-height: 0;
+    video{
+        width: 100%;
+       
+       
+    }
+
+}
+       
+
+.next{
+    background:linear-gradient(to left, rgba(white,.1),rgba($primary,.8));
+   
+   div{
+       &:hover{
+       animation-name:leftslideAnimation;
+       animation-duration: 1s;
+       }
+   }
+
+    h2{
+        font-size: 2rem;
+        color: $primary;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+    i{
+        font-size: 2rem;
+        color: $primary;
+        margin-left: 1rem;
     }
 }
