@@ -1111,8 +1111,8 @@ button {
 
 .review {
   padding: 3rem 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/media/img/testimonial-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/media/img/testimonial-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../media/img/testimonial-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../media/img/testimonial-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1312,8 +1312,8 @@ button {
 .price {
   padding: 2rem 0;
   padding-bottom: 7rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.6))), url(/assets/media/img/money.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)), url(/assets/media/img/money.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.6))), url(../media/img/money.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)), url(../media/img/money.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
