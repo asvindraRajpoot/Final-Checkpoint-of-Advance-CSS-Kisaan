@@ -1,0 +1,39 @@
+@media all and (max-width:768px){
+
+
+
+
+    .join
+    {  margin: 0;
+        
+        .container .outer-box {
+        margin: 0rem;
+    }
+}
+    
+
+
+    .contact{
+        padding-top: .5rem;
+        h2{
+            padding-top: 1.5rem;
+        }
+        img{
+            width: 50%;
+        }
+   .contact-address{
+      
+     .address{
+         width: 100%;
+         order: 1;
+     }
+     .form-data{
+         width: 100%;
+         margin-bottom: 1rem;
+     }
+   }
+
+    }
+
+
+}

@@ -138,9 +138,19 @@ button{
     padding: 1rem 0;
     z-index: 2;
     background-color:$primary;
+     #toggle,label{
+         display: none;
+     }
+     .container{
+        display: flex;
+        justify-content: space-between;
+     }
+
+     
+
    
     figure{
-        width: 11.5%;
+        width:100%;
         animation-name: leftslideAnimation;
         animation-duration: 500ms;
         

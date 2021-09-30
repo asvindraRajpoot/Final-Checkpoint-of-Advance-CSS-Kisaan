@@ -19,29 +19,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="container flex align-center space-between">
+      <div class="container  align-center">
+        <div class="flex space-between header-bar">
+
+       
+
+    
         <figure>
-          <a href="index.html">
+          <a class="brand" href="index.html">
             <img src="/assets/media/img/logo.png" alt="logo" />
           </a>
         </figure>
+        <label for="toggle">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
         <nav>
-          <ul class="flex space-between">
+          <input type="checkbox" id="toggle">
+          <ul class="flex space-between nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Service</a></li>
+            <li><a href="service.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main id="top">
-      <section class="hero">
-        <!-- <figure>
-          <img src="/assets/media/img/slider-bg.jpg" alt="hero-image" />
-        </figure> -->
+      <section class="hero sm-padding">
+    
         <div class="container">
-          <article class="">
+          <article class=" ">
             <div class="main-quote">
               <h1>We Have awesome things</h1>
               <p>Let's make the web beautiful together</p>
@@ -69,12 +77,12 @@
       <section class="domain">
         <div class="flex colom justify-center align-center">
           <h2>domains</h2>
-          <img src="/assets/media/img/devider.png" alt="devider" />
+          <img  src="/assets/media/img/devider.png" alt="devider" />
           <span>Have a glance on our tech stack </span>
         </div>
 
-        <div class="container flex space-between tech-box">
-          <article>
+        <div class="container flex space-between tech-box sm-colom  ">
+          <article class="sm-width">
             <h3>AI</h3>
             <figure>
               <img src="/assets/media/img/domain/Ai.jpg" alt="ai" />

@@ -1,0 +1,77 @@
+@media all and (max-width:768px){
+
+
+    .service{
+        margin: 1.3rem 0;
+
+      img{
+          width: 50%;
+      }
+        .about-article{
+            article{
+                width: 100%;
+            }
+        }
+    }
+
+
+    .review{
+
+        img{
+            width: 50%;
+        }
+    }
+    .work{
+        margin: 2rem 0;
+
+        img{
+            width: 50%;
+        }
+
+        nav ul{
+            align-items: center;
+            li{
+                margin: .5rem 0;
+            }
+        }
+        .img-grid{
+            figure{
+                width: 100%;
+            }
+        }
+
+    }
+
+    .price{
+
+        .price-box{
+
+        margin: 1rem 0;
+        
+        .box{
+            width: 100%;
+            margin: .4rem ;
+        }
+
+        .professional{
+            margin: 2rem 0;
+            transform: scale(1);
+            box-shadow: none;
+            margin: .4rem;
+
+            .top{
+
+            h4{
+               left: 15rem;
+            }
+        }
+        }
+    }
+
+    }
+
+
+
+
+
+}
