@@ -10,7 +10,7 @@
     background-attachment: fixed;
 
 
-    article{
+    .hero-container {
        width: 100%;
       
       
@@ -30,7 +30,7 @@
         }
         
         
-        h1{
+        h1,h5{
             letter-spacing: .16rem;
             font-size: 3.5rem;
             font-weight: 900;
@@ -100,7 +100,7 @@
         padding: 1rem;
     }
 
-     article{
+    .domain-article{
          width: 33%;
          padding: 1rem;
          align-items: center;
@@ -152,10 +152,10 @@
     background:linear-gradient(to left, rgba(white,.1),rgba($primary,.8));
    
    div{
-       &:hover{
+     
        animation-name:leftslideAnimation;
        animation-duration: 1s;
-       }
+       
    }
 
     h2{

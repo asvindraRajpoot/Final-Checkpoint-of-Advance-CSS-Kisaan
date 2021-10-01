@@ -10,7 +10,7 @@
     background-attachment: fixed;
 
 
-    article{
+    .about-container{
        width: 100%;
       
       
@@ -30,7 +30,7 @@
         }
         
         
-        h1{
+        h1,h5{
             letter-spacing: .16rem;
             font-size: 3.5rem;
             font-weight: 900;
@@ -84,7 +84,7 @@
         margin-bottom: 2rem;
     }
     .about-article{
-        article{
+       .about-article-first{
             width: 23%;
            
         margin-top: 2rem;
@@ -131,7 +131,8 @@
         }
 
     
-    h3{
+    
+    .about-main-article{    h3{
         color: $primary;
         font-size: 1.7rem;
        
@@ -142,6 +143,8 @@
         font-size: .9rem;
 
     }
+}
+
 }
     }
 

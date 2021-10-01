@@ -79,7 +79,7 @@ body {
   padding: 0 2rem;
 }
 
-h1 {
+h1, h5 {
   font-size: 2.5rem;
   color: white;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ h2 {
   color: white;
 }
 
-h3, h4, h5 {
+h3, h4 {
   font-size: .8rem;
   color: white;
 }
@@ -333,14 +333,14 @@ button {
   background-attachment: fixed;
 }
 
-.hero article {
+.hero .hero-container {
   width: 100%;
   text-align: center;
   display: -webkit-inline-box;
   overflow: auto;
 }
 
-.hero article .main-quote {
+.hero .hero-container .main-quote {
   width: 100%;
   -webkit-animation-name: leftslideAnimation;
           animation-name: leftslideAnimation;
@@ -350,18 +350,18 @@ button {
           animation-iteration-count: infinite;
 }
 
-.hero article h1 {
+.hero .hero-container h1, .hero .hero-container h5 {
   letter-spacing: .16rem;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
-.hero article p {
+.hero .hero-container p {
   margin-bottom: 2rem;
   letter-spacing: .16rem;
 }
 
-.hero article button {
+.hero .hero-container button {
   margin: 1rem auto;
   padding: .4rem 1.2rem;
   font-size: 1rem;
@@ -369,7 +369,7 @@ button {
   transition: all 1s;
 }
 
-.hero article button:hover {
+.hero .hero-container button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: white;
@@ -430,7 +430,7 @@ button {
   padding: 1rem;
 }
 
-.domain article {
+.domain .domain-article {
   width: 33%;
   padding: 1rem;
   -webkit-box-align: center;
@@ -443,25 +443,25 @@ button {
   transition: all 500ms;
 }
 
-.domain article:hover {
+.domain .domain-article:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.domain article:hover h3, .domain article:hover p {
+.domain .domain-article:hover h3, .domain .domain-article:hover p {
   color: white;
 }
 
-.domain article figure {
+.domain .domain-article figure {
   width: 100%;
 }
 
-.domain article figure img {
+.domain .domain-article figure img {
   width: 100%;
 }
 
-.domain article p {
+.domain .domain-article p {
   color: #363940;
   text-align: start;
   margin: .3rem 0;
@@ -480,7 +480,7 @@ button {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(54, 57, 64, 0.8));
 }
 
-.next div:hover {
+.next div {
   -webkit-animation-name: leftslideAnimation;
           animation-name: leftslideAnimation;
   -webkit-animation-duration: 1s;
@@ -512,14 +512,14 @@ button {
   background-attachment: fixed;
 }
 
-.hero-about article {
+.hero-about .about-container {
   width: 100%;
   text-align: center;
   display: -webkit-inline-box;
   overflow: auto;
 }
 
-.hero-about article .main-quote {
+.hero-about .about-container .main-quote {
   width: 100%;
   -webkit-animation-name: leftslideAnimation;
           animation-name: leftslideAnimation;
@@ -529,18 +529,18 @@ button {
           animation-iteration-count: infinite;
 }
 
-.hero-about article h1 {
+.hero-about .about-container h1, .hero-about .about-container h5 {
   letter-spacing: .16rem;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
-.hero-about article p {
+.hero-about .about-container p {
   margin-bottom: 2rem;
   letter-spacing: .16rem;
 }
 
-.hero-about article button {
+.hero-about .about-container button {
   margin: 1rem auto;
   padding: .4rem 1.2rem;
   font-size: 1rem;
@@ -548,7 +548,7 @@ button {
   transition: all 1s;
 }
 
-.hero-about article button:hover {
+.hero-about .about-container button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: white;
@@ -594,26 +594,26 @@ button {
   margin-bottom: 2rem;
 }
 
-.home-about .about-article article, .service .about-article article {
+.home-about .about-article .about-article-first, .service .about-article .about-article-first {
   width: 23%;
   margin-top: 2rem;
 }
 
-.home-about .about-article article:hover .outer-box, .service .about-article article:hover .outer-box {
+.home-about .about-article .about-article-first:hover .outer-box, .service .about-article .about-article-first:hover .outer-box {
   -webkit-transition: all 1ms;
   transition: all 1ms;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.home-about .about-article article:hover .outer-box i, .service .about-article article:hover .outer-box i {
+.home-about .about-article .about-article-first:hover .outer-box i, .service .about-article .about-article-first:hover .outer-box i {
   -webkit-transition: all 1ms;
   transition: all 1ms;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
-.home-about .about-article article .inner-box, .service .about-article article .inner-box {
+.home-about .about-article .about-article-first .inner-box, .service .about-article .about-article-first .inner-box {
   background-color: #363940;
   border: 0.2rem solid white;
   display: -webkit-box;
@@ -629,12 +629,12 @@ button {
   height: 2.1rem;
 }
 
-.home-about .about-article article .inner-box i, .service .about-article article .inner-box i {
+.home-about .about-article .about-article-first .inner-box i, .service .about-article .about-article-first .inner-box i {
   color: white;
   font-size: 1rem;
 }
 
-.home-about .about-article article .outer-box, .service .about-article article .outer-box {
+.home-about .about-article .about-article-first .outer-box, .service .about-article .about-article-first .outer-box {
   border: 0.2rem solid #363940;
   width: 2.5rem;
   height: 2.5rem;
@@ -646,19 +646,19 @@ button {
   margin-top: 1rem;
 }
 
-.home-about .about-article article .outer-box i, .service .about-article article .outer-box i {
+.home-about .about-article .about-article-first .outer-box i, .service .about-article .about-article-first .outer-box i {
   -webkit-transition: all 1ms;
   transition: all 1ms;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.home-about .about-article article h3, .service .about-article article h3 {
+.home-about .about-article .about-article-first .about-main-article h3, .service .about-article .about-article-first .about-main-article h3 {
   color: #363940;
   font-size: 1.7rem;
 }
 
-.home-about .about-article article p, .service .about-article article p {
+.home-about .about-article .about-article-first .about-main-article p, .service .about-article .about-article-first .about-main-article p {
   color: #363940;
   font-size: .9rem;
 }
@@ -934,14 +934,14 @@ button {
   background-attachment: fixed;
 }
 
-.hero-service article {
+.hero-service .service-container {
   width: 100%;
   text-align: center;
   display: -webkit-inline-box;
   overflow: auto;
 }
 
-.hero-service article .main-quote {
+.hero-service .service-container .main-quote {
   width: 100%;
   -webkit-animation-name: leftslideAnimation;
           animation-name: leftslideAnimation;
@@ -951,18 +951,18 @@ button {
           animation-iteration-count: infinite;
 }
 
-.hero-service article h1 {
+.hero-service .service-container h1, .hero-service .service-container h5 {
   letter-spacing: .16rem;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
-.hero-service article p {
+.hero-service .service-container p {
   margin-bottom: 2rem;
   letter-spacing: .16rem;
 }
 
-.hero-service article button {
+.hero-service .service-container button {
   margin: 1rem auto;
   padding: .4rem 1.2rem;
   font-size: 1rem;
@@ -970,7 +970,7 @@ button {
   transition: all 1s;
 }
 
-.hero-service article button:hover {
+.hero-service .service-container button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: white;
@@ -1022,26 +1022,26 @@ button {
   margin: 1rem 0 .5rem 0;
 }
 
-.service .about-article article {
+.service .about-article .about-article-first {
   width: 23%;
   margin-top: 2rem;
 }
 
-.service .about-article article:hover .outer-box {
+.service .about-article .about-article-first:hover .outer-box {
   -webkit-transition: all 1ms;
   transition: all 1ms;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.service .about-article article:hover .outer-box i {
+.service .about-article .about-article-first:hover .outer-box i {
   -webkit-transition: all 1ms;
   transition: all 1ms;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
-.service .about-article article .inner-box {
+.service .about-article .about-article-first .inner-box {
   background-color: #363940;
   border: 0.2rem solid white;
   display: -webkit-box;
@@ -1057,12 +1057,12 @@ button {
   height: 4.1rem;
 }
 
-.service .about-article article .inner-box i {
+.service .about-article .about-article-first .inner-box i {
   color: white;
   font-size: 1.7rem;
 }
 
-.service .about-article article .outer-box {
+.service .about-article .about-article-first .outer-box {
   border: 0.2rem solid #363940;
   width: 4.5rem;
   height: 4.5rem;
@@ -1074,20 +1074,20 @@ button {
   margin-top: 1rem;
 }
 
-.service .about-article article .outer-box i {
+.service .about-article .about-article-first .outer-box i {
   -webkit-transition: all 1ms;
   transition: all 1ms;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.service .about-article article h3 {
+.service .about-article .about-article-first .service-main-article h3 {
   color: #363940;
   font-size: 1.7rem;
   margin-top: 2rem;
 }
 
-.service .about-article article p {
+.service .about-article .about-article-first .service-main-article p {
   color: #363940;
   font-size: .9rem;
 }
@@ -1604,7 +1604,7 @@ button {
           justify-content: center;
 }
 
-.join .container article {
+.join .container .about-article-first {
   width: unset;
 }
 
@@ -1938,7 +1938,7 @@ button:hover a i {
   .domain img {
     width: 50%;
   }
-  .domain article {
+  .domain .domain-article {
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -1951,7 +1951,7 @@ button:hover a i {
   .home-about img {
     width: 50%;
   }
-  .home-about .about-article article {
+  .home-about .about-article .about-article-first {
     width: 100%;
   }
   .skills {
@@ -2007,7 +2007,7 @@ button:hover a i {
   .service img {
     width: 50%;
   }
-  .service .about-article article {
+  .service .about-article .about-article-first {
     width: 100%;
   }
   .review img {
